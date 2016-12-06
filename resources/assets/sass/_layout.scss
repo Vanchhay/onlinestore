@@ -1,0 +1,26 @@
+@import 'plugin/bourbon/_bourbon.scss';
+/* 
+ * PAGE : Main visaul
+ * SECTION : Header navigation
+ */
+
+html{
+	background: none;
+	background-image: none;
+}
+body{
+	position: relative;
+	background: $white;
+	font-family: $font-family-sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	letter-spacing: 0;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+body.mobile_nav_open{
+	overflow: hidden;
+}

@@ -6,10 +6,7 @@
 /.idea
 Homestead.json
 Homestead.yaml
-.env
 bootstrap/cache/
-.env.*.php
-.env.php
 
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/

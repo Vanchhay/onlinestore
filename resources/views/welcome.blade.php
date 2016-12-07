@@ -44,5 +44,112 @@
         </div>
         
         <script src="/js/scripts.js"></script>
+
+
+
+
+        <div class="contaier">
+            <div class="content">
+
+                <div class="row">
+                    <div class="time-range">
+
+                        <div class="from">
+                            <div class="hour" id="from-hour">
+                                <span class="increase">
+                                    +
+                                </span>
+                                <input name="start-hour" type="text" class="time-input">
+                                <span class="decrease">
+                                    -
+                                </span>
+                            </div>
+
+                            <div class="minute" id="from-minute">
+                                <span class="increase">
+                                    +
+                                </span>
+                                <input name="start-minute" type="text" class="time-input">
+                                <span class="decrease">
+                                    -
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="to">
+                            <div class="hour" id="to-hour">
+                                <span class="increase">
+                                    +
+                                </span>
+                                <input name="stop-hour" type="text" class="time-input">
+                                <span class="decrease">
+                                    -
+                                </span>
+                            </div>
+
+                            <div class="minute" id="to-minute">
+                                <span class="increase">
+                                    +
+                                </span>
+                                <input name="stop-minute" type="text" class="time-input" value="00">
+                                <span class="decrease">
+                                    -
+                                </span>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="tasks-range">
+                        <ul class="hours-range">
+                            <li class="hour">
+                                <select name="select1" class="tasks-select">
+                                    <option value="task 1">Task 1</option>
+                                    <option value="task 2">Task 2</option>
+                                    <option value="task 3">Task 3</option>
+                                    <option value="task 4">Task 4</option>
+                                    <option value="task 5">Task 5</option>
+                                </select>
+                            </li>
+
+                            <li class="hour">
+                                <select name="select2" class="tasks-select">
+                                    <option value="task 1">Task 1</option>
+                                    <option value="task 2">Task 2</option>
+                                    <option value="task 3">Task 3</option>
+                                    <option value="task 4">Task 4</option>
+                                    <option value="task 5">Task 5</option>
+                                </select>
+                            </li>
+
+                            <li class="hour">
+                                <select name="select3" class="tasks-select">
+                                    <option value="task 1">Task 1</option>
+                                    <option value="task 2">Task 2</option>
+                                    <option value="task 3">Task 3</option>
+                                    <option value="task 4">Task 4</option>
+                                    <option value="task 5">Task 5</option>
+                                </select>
+                            </li>
+
+                            <li class="hour">
+                                <select name="select4" class="tasks-select">
+                                    <option value="task 1">Task 1</option>
+                                    <option value="task 2">Task 2</option>
+                                    <option value="task 3">Task 3</option>
+                                    <option value="task 4">Task 4</option>
+                                    <option value="task 5">Task 5</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </body>
 </html>

@@ -15,6 +15,7 @@ class admin extends Controller
       $decrpt = $request->textarea;
       $img = $request->file('img');
       $imgName = $img->getClientOriginalName();
+      Image::make($img)->resize(350,260)->save($img);
       $img->move('images/', $imgName);
 
       DB::table('product_master')->insert(["category" => $cate, "product_name" => $name, "price" => $price, "description" => $decrpt, "img" => $imgName]);

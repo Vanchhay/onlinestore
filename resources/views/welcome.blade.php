@@ -29,7 +29,7 @@
 <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="col-item">
               <div class="photo">
-                  <img src="/images/{{ $product->img }}" width="350" height="260" class="img-responsive" alt="a" />
+                  <img src="/images/{{ $product->img }}"  class="img-responsive" alt="a" />
                   <hr>
               </div>
               <div class="info">

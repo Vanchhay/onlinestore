@@ -1,5 +1,8 @@
 const elixir = require('laravel-elixir');
-
+const BrowserSync = require('laravel-elixir-browsersync');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const bs = require('browser-sync').create(); // create a browser sync instance.
 // require('laravel-elixir-vue-2');
 
 /*
@@ -19,8 +22,25 @@ elixir((mix) => {
        .scripts(['components/main.js', 
        			'components/useful.js', 
        			'components/analytics.js'], 
-       			'public/js/scripts.js')
-       .browserSync({
-        	proxy: 'onlinestore.dev'
-    	});
+       			'public/js/scripts.js');
+});
+
+gulp.task('browser-sync', ()=> {
+    bs.init({
+        
+        proxy: "localhost:8000"
+       
+    });
+});
+
+gulp.task('sass', ()=> {
+    return gulp.src('sass/*.scss')
+                .pipe(sass())
+                .pipe(gulp.dest('css'))
+                .pipe(bs.reload({stream: true})); // prompts a reload after compilation
+});
+
+gulp.task('watch', ()=> {
+    gulp.watch("sass/*.scss", ['sass']);
+    gulp.watch("*.html").on('change', bs.reload);
 });

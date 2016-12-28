@@ -1,0 +1,36 @@
+
+.img-responsive{
+	position: relative;
+	display: block;
+	width: 100%;
+	vertical-align: bottom;
+}
+
+/* Section heading title */
+.section-heading{
+	float: left;
+	width: 100%;
+	padding: 20px 0 10px 0;
+
+	h1{
+		margin: 0;
+		position: relative;
+		display: inline-block;
+		text-transform: uppercase;
+		font-family: $Abel;
+		font-weight: 400;
+		font-size: 1.8em;
+		color: #fff;
+		letter-spacing: -1px;
+		word-spacing: 2px;
+
+		&:after{
+			display:block;
+			position: relative;
+			content: "";
+			height: 2px;
+			background: #fff;
+			bottom: 0;
+		}
+	}
+}

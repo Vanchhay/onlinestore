@@ -11,14 +11,10 @@
 |
 */
 
-Route::get('/', 'admin@putProduct');
+// Web public access
+Route::get('/', 'PagesController@index');
 
-Route::get('admin',function()
-{
-  return view('admin');
+// Admin panel dashboard
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });
-Route::get('dashboard',function()
-{
-  return view('dashboard');
-});
-Route::post('/upload','admin@upload');

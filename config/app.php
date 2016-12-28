@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Laravel',
+    'name' => 'Lion dara co,ltd',
 
     /*
     |--------------------------------------------------------------------------
@@ -168,7 +168,7 @@ return [
          * Package Service Providers...
          */
 
-        //
+        TCG\Voyager\VoyagerServiceProvider::class,
 
         /*
          * Application Service Providers...
